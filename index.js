@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 app.get('/day', (req, res) => {
     days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
     date = new Date()
-    res.send('Day is ${days[date.getDay() ]}')
+    res.send(`Day is ${days[date.getDay() ]}`)
 })
 
 app.listen(port, () => {
